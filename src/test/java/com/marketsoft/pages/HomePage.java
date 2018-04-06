@@ -5,18 +5,32 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import com.marketsoft.utilities.PropertiesManager;
+
+import java.io.IOException;
+
 
 public class HomePage {
 
     private WebDriver driver;
 
+    static PropertiesManager testProperties = new PropertiesManager();
+
     //Page URL
-    private static String PAGE_URL="https://www.google.de";
+    private static String PAGE_URL;
+
+    static {
+        try {
+            PAGE_URL = testProperties.getTestProperties("homepage_url");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     //Locators
 
     //Apply as Developer Button
-    @FindBy(how = How.LINK_TEXT, using = "APPLY AS A DEVELOPER")
+    @FindBy(how = How.ID, using = "APPLY AS A DEVELOPER")
     private WebElement developerApplyButton;
 
     //Constructor
