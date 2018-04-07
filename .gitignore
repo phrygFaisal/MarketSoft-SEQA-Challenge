@@ -22,3 +22,7 @@ target/surefire-reports/
 chromedriver
 
 target/
+
+geckodriver
+
+operadriver

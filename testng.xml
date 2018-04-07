@@ -15,6 +15,7 @@
 
     <!--Tests to be run against Chrome Browser-->
     <test name="Chrome Browser Test" >
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="com.marketsoft.tests.HomePageTest"/>
             <!--<class name="com.marketsoft.example.demoTwo"/>
@@ -24,18 +25,20 @@
 
     <!--Tests to be run against Firefox Browser-->
     <test name="Firefox Browser Test" >
+        <parameter name="browser" value="firefox"/>
         <classes>
-            <!--<class name="com.first.example.demoOne"/>
-            <class name="com.first.example.demoTwo"/>
+            <class name="com.marketsoft.tests.HomePageTest"/>
+            <!--<class name="com.first.example.demoTwo"/>
             <class name="com.second.example.demoThree"/>-->
         </classes>
     </test>
 
     <!--Tests to be run against Opera Browser-->
     <test name="Opera Browser Test" >
+        <parameter name="browser" value="opera"/>
         <classes>
-            <!--<class name="com.first.example.demoOne"/>
-            <class name="com.first.example.demoTwo"/>
+            <class name="com.marketsoft.tests.HomePageTest"/>
+            <!--<class name="com.first.example.demoTwo"/>
             <class name="com.second.example.demoThree"/>-->
         </classes>
     </test>
