@@ -18,6 +18,13 @@ This implementation aims to automate 10 specific test scenarios written against 
 
 Set up the environment as per need of usage
 
+* Browser executable need to be available in local directory. The driver should be placed under the project path **BLA BLA BLA**
+  * Chrome browser driver for Selenium. Get it [HERE.](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+  * Firefox browser driver for Selenium. Get it [HERE.](https://github.com/mozilla/geckodriver/releases)
+  * Opera browser driver for Selenium. Get it [HERE.](https://github.com/operasoftware/operachromiumdriver/releases)
+
+
+
 ###### Runtime Environment
 
 * Maven must be installed. Get it [HERE.](https://maven.apache.org/download.cgi)
